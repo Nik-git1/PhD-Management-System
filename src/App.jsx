@@ -1,13 +1,11 @@
-import { useState } from "react";
-import Header from "./components/Header";
+import Header from "./components/Header"
+import Database from "./pages/Database";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <div className="App">
       <Header />
-      <h1 className="text-7xl font-bold">PhD Management System</h1>
+      <Database />
     </div>
   );
 }
