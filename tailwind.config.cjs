@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const colors = require('tailwindcss/colors')
 module.exports = {
   content: [
     "./index.html",
@@ -13,12 +14,14 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-      'white': '#ffffff',
-      'pantoneblue': '#3fada8',
-      'pantonecoolgrey9': '#808080',
-      'pantonecoolgrey11': '#4d4d4d',
-      'pantonegrey4': '#666666',
-      'pantonegrey5': '#333333',
+      'white': colors.white,
+      'red': colors.red,
+      'gray': colors.gray,
+      'pantone-blue': '#3fada8',
+      'pantone-cool-gray-9': '#808080',
+      'pantone-cool-gray-11': '#4d4d4d',
+      'pantone-gray-4': '#666666',
+      'pantone-gray-5': '#333333',
     }
   },
   plugins: [],

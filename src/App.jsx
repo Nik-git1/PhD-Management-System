@@ -1,14 +1,21 @@
-import Header from "./components/Header"
+import Header from "./components/Header";
 import Database from "./pages/Database";
-import Table from "./components/Table"
+import Exam from "./pages/Exam";
+import StudentDetails from "./pages/StudentDetails";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Database />
-      <Table/>
-    </div>
+    <Router>
+      <div className="App">
+        <Header />
+        <Routes>
+          <Route path="/" exact element={<Database />} />
+          <Route path="/exam_invigilation" element={<Exam />} />
+          <Route path="/student_details" element={<StudentDetails />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
