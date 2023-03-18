@@ -1,7 +1,7 @@
 import Header from "./components/Header";
 import Database from "./pages/Database";
 import Exam from "./pages/Exam";
-import StudentDetails from "./pages/StudentDetails";
+import StudentDetails from "./pages/StudentLog";
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
         <Routes>
           <Route path="/" exact element={<Database />} />
           <Route path="/exam_invigilation" element={<Exam />} />
-          <Route path="/student_details" element={<StudentDetails />} />
+          <Route path="/student_logbook" element={<StudentDetails />} />
         </Routes>
       </div>
     </Router>
