@@ -25,7 +25,7 @@ function ButtonGrp() {
           href="#"
         >
           <PersonAddAlt1Icon style={{ color: "white" }} />
-          <span class="ml-2 font-medium text-white transition-colors">
+          <span class="ml-2 font-medium text-white transition-colors hidden md:inline-block">
             Add New Students
           </span>
         </a>
@@ -37,8 +37,8 @@ function ButtonGrp() {
             href={btn.href}
           >
             <span class="font-medium transition-colors group-hover:text-white">
-              <btn.icon className="mr-2" />
-              {btn.name}
+              <btn.icon />
+              <span className="hidden md:inline-block ml-2">{btn.name}</span>
             </span>
           </a>
         ))}
